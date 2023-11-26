@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Header'
+import Lottie from 'react-lottie';
+import animationData from './animation.json';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,6 +31,18 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Lottie 
+            options={{
+                loop: true,
+                autoplay: true,
+                animationData: animationData,
+                rendererSettings: {
+                    preserveAspectRatio: 'xMidYMid slice'
+                }
+            }}
+            // height={300}
+            // width={300}
+        />
     </>
   )
 }
