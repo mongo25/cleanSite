@@ -13,6 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container-max{
+  max-width: 1312px;
+  }
+  
+
 a {
   font-weight: 500;
   color: #646cff;

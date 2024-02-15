@@ -26,7 +26,7 @@ function HomePage() {
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
   const handleButtonClick = () => {
-    navigate('/OurPrice'); // Replace '/your-path' with your desired route
+    navigate("/OurPrice"); // Replace '/your-path' with your desired route
   };
 
   useEffect(() => {
@@ -46,11 +46,11 @@ function HomePage() {
   }, []);
   return (
     <>
-      <div className="sticky-top">
+      <header className="sticky-top">
         <div className={scrolled ? "headerShadow" : ""}>
           <Header />
         </div>
-      </div>
+      </header>
       <div className="bannerMain spaceBetween">
         <div className="container">
           <div className="row">
@@ -65,9 +65,12 @@ function HomePage() {
                 p4="relax."
               />
               {/* <Link to="/"> */}
-                <button onClick={handleButtonClick} className="mainButton mt-5 float-left">
-                  Get a Price
-                </button>
+              <button
+                onClick={handleButtonClick}
+                className="mainButton mt-5 float-left"
+              >
+                Get a Price
+              </button>
               {/* </Link> */}
             </div>
             <div className="col-md-6">
