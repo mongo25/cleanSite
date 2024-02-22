@@ -2,7 +2,13 @@ import { useState } from "react";
 import { Carousel } from "react-bootstrap";
 import "./App.css";
 import WhyCards from "./WhyCards";
-import { reviewOne, reviewTwo, reviewThree, reviewFour, reviewFive, } from "./assets";
+import {
+  reviewOne,
+  reviewTwo,
+  reviewThree,
+  reviewFour,
+  reviewFive,
+} from "./assets";
 import Rating from "@mui/material/Rating";
 
 function MyCarousel() {
@@ -10,7 +16,7 @@ function MyCarousel() {
 
   return (
     <Carousel>
-         <Carousel.Item>
+      <Carousel.Item>
         <div className="myCarousel">
           {/* <h3>Second slide label</h3>
           <p>Summary of the second item.</p> */}
@@ -19,9 +25,7 @@ function MyCarousel() {
               font={"fs-4 lh-base"}
               icon={reviewFive}
               title={"Jessica Gomez"}
-              summary={
-                "Incredible service! As a night-shift nurse, house cleaning takes a back seat. But their bi-weekly visits are a game changer. They focus on the hard-to-clean areas, leaving my home immaculate. Plus, their eco-friendly options are a big plus for me."
-              }
+              summary={""}
               rating={<Rating name="read-only" value={value} readOnly />}
             />
           </div>

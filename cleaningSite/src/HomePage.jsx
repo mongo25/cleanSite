@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   homeIcon,
+  mobileIcon,
   cleaningIcon,
   calendarIcon,
   checkIcon,
@@ -15,7 +16,9 @@ import {
   guaranteeIcon,
   ecoIcon,
   cleanTeam,
+  mobileApp,
 } from "./assets";
+import carBackground from "./assets/carBackground.png";
 import { Link, useNavigate } from "react-router-dom";
 
 import TitleSummary from "./TitleSummary";
@@ -46,17 +49,19 @@ function HomePage() {
   }, []);
   return (
     <>
-      <header className="sticky-top">
-        <div className={scrolled ? "headerShadow" : ""}>
-          <Header />
-        </div>
+      <header
+        className={`sticky-top main-menu-area ${
+          scrolled ? "headerShadow" : ""
+        }`}
+      >
+        <Header />
       </header>
       <div className="bannerMain spaceBetween">
-        <div className="container">
+        <div className="container container-max">
           <div className="row">
             <div className="col-md-6">
               <Slogan
-                summary="Will take care of"
+                summary="We'll take care of"
                 summary2="the housework and"
                 summary3="the errands"
                 p="You just come home,"
@@ -65,36 +70,43 @@ function HomePage() {
                 p4="relax."
               />
               {/* <Link to="/"> */}
-              <button
-                onClick={handleButtonClick}
-                className="mainButton mt-5 float-left"
-              >
-                Get a Price
-              </button>
+              <div className="d-flex justify-content-left mt-4">
+                <a
+                  onClick={handleButtonClick}
+                  className="btn btn-custom-2 px-4 py-3 fs-5 fw-bold"
+                >
+                  See how it works
+                </a>
+              </div>
               {/* </Link> */}
             </div>
             <div className="col-md-6">
-              <div className="backGroundImg">
-                <MyAnimation />
-                {/* <img src={myImage} alt="Background car" /> */}
+              <div className="banner-right">
+                <img src={carBackground} alt="Background car" />
+                <div className="banner-right2">
+                  <MyAnimation />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="bannerSteps d-flex align-items-center">
-        <div className="container">
+      <section className="work-steps">
+        <div className="container container-max">
           <div className="row">
-            <div className="col-md-12 pb-3">
-              <h1>How It Works</h1>
-              <p>
-                Well clean your home weekly, every two weeks, or every three{" "}
-                <br />
-                weeks. All our plans include low-cost or FREE errand running
-                services.
-              </p>
+            <div class="col-md-12">
+              <div class="section-title">
+                <h2 className="fw-bold">How it works</h2>
+                <p>
+                  We'll clean your home weekly, every two weeks, or every three
+                  weeks. <br />
+                  All our plans include low-cost or FREE errand running
+                  services.
+                </p>
+              </div>
             </div>
-            <div className="col-lg-3 col-md-12 col-11 m-auto ml-lg-auto">
+
+            <div className="col-lg-3 col-md-12 col-11 m-auto ms-lg-auto">
               <div>
                 <StepsCard
                   icon={cleaningIcon}
@@ -105,8 +117,8 @@ function HomePage() {
                 />
               </div>
             </div>
-            <div className="col-lg-3 col-md-12 col-11 m-auto ml-lg-auto">
-              <div>
+            <div className="col-lg-3 col-md-12 col-11 m-auto">
+              <div className="center-card position-relative">
                 <StepsCard
                   icon={calendarIcon}
                   title={"Book it."}
@@ -116,7 +128,7 @@ function HomePage() {
                 />
               </div>
             </div>
-            <div className="col-lg-3 col-md-12 col-11 m-auto ml-lg-auto">
+            <div className="col-lg-3 col-md-12 col-11 m-auto me-lg-auto">
               <div>
                 <StepsCard
                   icon={homeIcon}
@@ -127,20 +139,27 @@ function HomePage() {
                 />
               </div>
             </div>
+            <div className="col-12 mt-custom-80 text-center ">
+              <a className="btn btn-custom-3" href="#">
+                Learn more about our services
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="whyBanner spaceBetween">
-        <div className="container">
-          <div className="row">
-            <TitleSummary
-              title={"Why MoreHands"}
-              summary={"The only maid service that cleans your"}
-              rest={"home and runs your errands for you"}
-            />
+      </section>
+      <section className="whyArea">
+        <div className="container container-max">
+          <div className="row ">
+            <div className="mb-3">
+              <TitleSummary
+                title={"Why MoreHands"}
+                summary={"The only maid service that cleans your"}
+                rest={"home and runs your errands for you"}
+              />
+            </div>
             <div className="col-lg-9 col-md-11 m-auto">
               <div className="row">
-                <div className="col-md-6 mb-4">
+                <div className="col-md-6">
                   <WhyCards
                     icon={checkIcon}
                     title={"Reliable Service"}
@@ -178,27 +197,69 @@ function HomePage() {
                 </div>
               </div>
             </div>
+            <div className="col-md-12">
+              <div className="why-bottom-area">
+                <div class="">
+                  <div class="why-bottom-head">
+                    <img src={mobileIcon} alt="mobile-icon" />
+                    <h5 class="text-white mb-4 mt-3 fw-bold fs-4 ">
+                      Take care of your household schedule on your phone
+                    </h5>
+                  </div>
+                  <div class="why-bottom-text text-white fw-semibold fs-5">
+                    <p>
+                      Manage your cleaning services and schedule
+                      <br /> in the MoreHands app
+                    </p>
+                  </div>
+                  <div class="why-bottom-btns pt-5 text-center">
+                    <a
+                      href="https://apps.apple.com/us/app/morehands/id1513648303"
+                      class="btn btn-outline-white"
+                      target="_blank"
+                    >
+                      <i class="fab fa-apple fa-lg me-2" aria-hidden="true"></i>{" "}
+                      Download for iOS
+                    </a>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.morehands.customerApp&amp;hl=en_US&amp;gl=US"
+                      class="btn btn-outline-white ml-3"
+                      target="_blank"
+                    >
+                      <i
+                        class="fab fa-google-play fa-lg me-2"
+                        aria-hidden="true"
+                      ></i>{" "}
+                      Download for Android
+                    </a>
+                  </div>
+                  <div class="mobile-shot-area">
+                    <img src={mobileApp} alt="mobile-app" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="testimonialBanner d-flex align-items-center">
+      </section>
+      <section className="testimonial d-flex align-items-center">
         <div className="container">
           <div className="row">
             <div className="col-md-12 pb-3">
-              <h1 className="headingBanner">What our customers say about</h1>
-              <p className="pBanner">
-                Well clean your home weekly, every two weeks, or every three{" "}
-                <br />
-                weeks. All our plans include low-cost or FREE errand running
-                services.
-              </p>
+              <div className="section-title">
+                <TitleSummary
+                  title="What our customers say about MoreHands"
+                  summary={"For 20 years we've helped busy Texans make"}
+                  rest={"home a clean, relaxing refuge"}
+                />
+              </div>
               <div className="col-md-10 col-11 m-auto">
                 <MyCarousel />
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div className="bannerMain spaceBetween">
         <div className="container">
           <div className="row">

@@ -3,13 +3,73 @@
   margin: 0 auto;
   /* padding: 2rem; */
   text-align: center;
-  color: #124E78;
+  color: #124e78;
 }
 
+.btn-custom-1 {
+  background-color: #00afd0 !important;
+  color: #fff !important;
+}
+.btn-custom-1:hover {
+  background-color: #008faa !important;
+  border-color: #00849d !important;
+}
+
+.btn-custom-2 {
+  background-color: #00afd0 !important;
+  color: #fff !important;
+  transition: 0.5s !important;
+}
+
+.btn-custom-2:hover {
+  background-color: white !important;
+  color: #00afd0 !important;
+  border: 1px solid #124e78 !important;
+}
+
+.btn-custom-3 {
+  background-color: #fff !important;
+  color: #00afd0 !important;
+  transition: 0.5s !important;
+  border: 1px solid #00afd0 !important;
+  line-height: 16px !important;
+  font-weight: 700 !important;
+  font-size: 1.1rem !important;
+  padding: 16px 24px !important;
+}
+
+.btn-custom-3:hover {
+  background-color: #00afd0 !important;
+  color: #fff !important;
+}
+
+.btn-outline-white {
+  color: #fff !important;
+  border-color: #fff !important;
+  padding: 1rem 1.5rem !important;
+  font-size: 1.1rem !important;
+  line-height: 1.5 !important;
+}
+
+.btn-outline-white:hover {
+  color: #212529 !important;
+  background-color: #fff !important;
+  border-color: #fff;
+}
+
+/* header code starts  */
+.main-menu-area {
+  height: 108px;
+  background-color: #fff;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: #00AFD0 !important; /* Replace with your preferred shade of blue */
+  background-color: #00afd0 !important; /* Replace with your preferred shade of blue */
   color: white; /* Optional, in case you want to change the arrow color */
   border-radius: 50%; /* Optional, for circular buttons */
   width: 40px !important; /* Adjust size as needed */
@@ -17,9 +77,9 @@
   align-items: center; /* Center the arrow vertically */
   justify-content: center; /* Center the arrow horizontally */
   opacity: initial !important;
-  background: 1!important;
+  background: 1 !important;
   margin: 0 12px 0 12px;
-    top: 45% !important; /* Position the top edge of the button at the middle of the carousel */
+  top: 45% !important; /* Position the top edge of the button at the middle of the carousel */
 }
 
 .card {
@@ -28,61 +88,139 @@
 
 .stepsCard {
   background: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 16px !important;
   padding: 30px 25px;
   text-align: center;
 }
+.stepsCard::before,
+.stepsCard::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: url(../images/icons/Arrow-icon.svg) no-repeat;
+  background-size: 24px 24px;
+  left: -85px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 .stepsCard h5 {
-  color: #124E78;
+  color: #124e78;
   font-weight: 700;
 }
-
+/*why area */
+.why-bottom-area {
+  background: #00afd0;
+  border-radius: 16px;
+  padding-top: 190px;
+  margin-top: -177px;
+}
 .whyCard {
   background: #fff;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 16px;
-  padding: 30px 25px;
-  text-align: left;
+  box-shadow: 0px 10px 36px rgba(18, 78, 120, 0.08);
+  border-radius: 16px !important;
+  padding: 30px 20px;
+  min-height: 270px;
+  margin-bottom: 30px;
 }
 
-.whyCard h5 p {
-  color: #124E78;
-  font-weight: 700;
-}
-
-.whyCard h5 {
-  color: #124E78;
+.whyCard h3 {
+  color: #124e78;
+  font-size: 22px !important;
   font-weight: 700;
 }
 
 .whyCard p {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 25px;
   font-weight: 500;
-  color: #124E78;
+  color: #124e78;
 }
-
 
 .spaceBetween {
-  padding: 80px 0px 123px 0
+  padding: 80px 0px 0 0;
 }
-
-.bannerSteps {
+.banner-right {
   position: relative;
+  height: 500px;
+}
+.banner-right img {
+  width: 100;
+}
+.banner-right2 {
+  position: absolute;
+  bottom: 0;
   width: 90%;
-  height: 600px;
+}
+/*work steps code start here*/
+.work-steps {
+  padding: 80px 0;
+  position: relative;
+  margin-top: -2px;
+  background: transparent;
+}
+.work-steps:before {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 424px;
   background: #ddf9ff;
   border-radius: 16px;
+  left: 0;
+  right: 0;
   margin: 0 auto;
+  top: 0px;
+}
+.work-steps .work-step-cards {
+  position: absolute;
+  top: 55%;
+}
+.work-steps .center-card::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: url(./assets/Arrow-icon.svg) no-repeat;
+  background-size: 24px 24px;
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.work-steps .center-card::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: url(./assets/Arrow-icon.svg) no-repeat;
+  background-size: 24px 24px;
+  right: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 48px;
+  background: transparent !important;
+  z-index: 9 !important;
+  position: relative;
 }
 
-.bannerSteps h1 {
-  font-size: 45px;
+.work-steps .work-text h2 {
+  font-size: 32px;
   line-height: 42px;
-  color: #124E78;
+  color: #124e78;
   font-weight: bold;
+}
+/* why area starts here*/
+.whyArea {
+  padding: 80px 0 95px 0;
+}
+.why-bottom-btns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 .headingBanner {
@@ -99,17 +237,17 @@
   color: #fff;
 }
 
-.bannerSteps p {
-  font-size: 20px;
+.work-steps p {
+  font-size: 1.1rem;
   line-height: 27px;
   font-weight: 500;
-  color: #124E78;
+  color: #124e78;
 }
 
 .title {
   font-size: 45px;
   line-height: 42px;
-  color: #124E78;
+  color: #124e78;
   font-weight: bold;
 }
 
@@ -117,12 +255,12 @@
   font-size: 20px;
   line-height: 27px;
   font-weight: 500;
-  color: #124E78;
+  color: #124e78;
 }
 
 .floatRight {
   display: block;
-  color: #124E78;
+  color: #124e78;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -136,7 +274,7 @@
 }
 
 .mainButton {
-  background-color: #00AFD0;
+  background-color: #00afd0;
   float: left;
   border-radius: 30px;
   color: #fff;
@@ -151,8 +289,8 @@
   background-color: white;
   float: left;
   border-radius: 5px;
-  border: 1px solid #124E78;
-  color: #124E78;
+  border: 1px solid #124e78;
+  color: #124e78;
   padding: 1rem 4.5rem;
   text-decoration: none;
   font-size: 20px;
@@ -162,14 +300,14 @@
 
 .priceButton:hover {
   background-color: white;
-  color: #00AFD0;
-  border: 1px solid #00AFD0;
+  color: #00afd0;
+  border: 1px solid #00afd0;
   transition: 0.5s;
   /* transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
 }
 
 .footerButton {
-  background-color: #00AFD0;
+  background-color: #00afd0;
   float: left;
   border-radius: 30px;
   color: #fff;
@@ -183,16 +321,16 @@
 
 .footerButton:hover {
   background-color: white;
-  color: #00AFD0;
-  border: 1px solid #124E78;
+  color: #00afd0;
+  border: 1px solid #124e78;
   transition: 0.5s;
   /* transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
 }
 
 .mainButton:hover {
   background-color: white;
-  color: #00AFD0;
-  border: 1px solid #124E78;
+  color: #00afd0;
+  border: 1px solid #124e78;
   transition: 0.5s;
   /* transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
 }
@@ -201,7 +339,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 li {
@@ -209,55 +346,25 @@ li {
   padding: 5px 16px;
 }
 
-li a {
-  display: block;
-  color: #124E78;
-  text-align: center;
-  padding: 5px 0px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-li a:hover {
-  color: #124E78;
-  /* Same color as the non-hover state */
-  text-decoration: none;
-}
-
 .active {
-  background-color: #00AFD0;
+  background-color: #00afd0;
   float: right;
   border-radius: 10px;
   color: #fff;
 }
 
-a {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.15em;
-
-  display: inline-block;
-  padding: 15px 20px;
-  position: relative;
+.main-menu ul li a {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #124e78;
+  transition: all 0.5s ease-in-out;
+  padding: 6px 0;
 }
 
-li a:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #00AFD0;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-
-a:hover:after {
-  width: 100%;
-  left: 0;
+.main-menu ul li a:hover,
+.main-menu ul li a:active {
+  border-bottom: 3px solid #00afd0;
 }
 
 .headerShadow {
@@ -267,31 +374,24 @@ a:hover:after {
   transition: box-shadow 0.3s ease-in-out;
 }
 
-.backGroundImg {
-  height: 300px;
-  /* Adjust as needed */
-  width: 100%;
-  background-image: url('./assets/carBackground.png');
-  /* Adjust the path as needed */
-  background-size: cover;
-  /* Cover the entire area */
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Prevent repeating the image */
+.sloganText {
+  margin-top: 60px;
 }
-
-.sloganText h1 {
-  font-size: 55px;
+.sloganText h2 {
+  font-size: 40px;
+  line-height: 48px;
   font-weight: 700;
-  color: #124E78;
+  color: #124e78;
+  margin-bottom: 15px;
   text-align: left;
 }
 
 .sloganText p {
-  font-size: 25px;
-  font-weight: 700;
-  color: #59bfd2;
+  font-size: inherit;
+  line-height: 27px;
+  font-weight: 500;
+  color: #124e78;
+  margin-bottom: 48px;
   text-align: left;
 }
 
@@ -299,7 +399,7 @@ a:hover:after {
   position: relative;
   width: 90%;
   height: 600px;
-  background: #00AFD0;
+  background: #00afd0;
   border-radius: 16px;
   margin: 0 auto;
 }

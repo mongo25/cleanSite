@@ -1,5 +1,9 @@
+@import '@fontsource/montserrat/index.css';
+@import '@fontsource/montserrat/500.css';
+@import '@fontsource/montserrat/600.css';
+@import '@fontsource/montserrat/700.css';
+@import '@fontsource/montserrat/800.css';
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -29,16 +33,12 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
 button {
   border-radius: 8px;
@@ -58,7 +58,12 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+.pt-custom-1{
+  padding-top: 400px !important;
+  }
+.mt-custom-80{
+margin-top: 80px;
+}  
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -71,3 +76,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+

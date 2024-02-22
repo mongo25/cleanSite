@@ -3,13 +3,13 @@ import "./App.css";
 function Slogan({ summary, summary2, summary3, p, p2, p3, p4, font, fontP }) {
   return (
     <div className="sloganText">
-      <h1 className={font}>
+      <h2 className={font}>
         {summary}
         <br />
         {summary2}
         <br />
         {summary3}
-      </h1>
+      </h2>
       <p className={`sloganTex ${fontP}`}>
         {p} <b>{p2}</b>
         {p3} <b>{p4}</b>
