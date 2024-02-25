@@ -20,7 +20,10 @@
 .container-max {
   max-width: 1312px;
 }
-
+a {
+  text-decoration: none;
+  color: inherit;
+}
 body {
   margin: 0;
   min-width: 320px;

@@ -482,3 +482,32 @@ li {
 .fs-custom {
   font-size: 1.1rem;
 }
+/* footer starts here  */
+
+.footer-logo {
+  width: 100px;
+}
+.footer-1 h4 {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #124e78;
+}
+.footer-1 ul li,
+.footer-1 p,
+.footer-1 .phone-item {
+  font-size: 12px;
+  line-height: 16px;
+  color: #124e78;
+  font-weight: 500;
+}
+
+.locationInfo-item {
+  margin-bottom: 40px;
+}
+
+a.numberVal-tel {
+  color: #00afd0;
+  text-decoration: none;
+  background-color: transparent;
+}

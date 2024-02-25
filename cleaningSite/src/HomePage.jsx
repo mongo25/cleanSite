@@ -353,36 +353,6 @@ function HomePage() {
           </div>
         </div>
       </section>
-      {/* <div className="bannerMain spaceBetween">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 d-flex flex-column justify-content-center">
-              <Slogan
-                summary="Making every day brighter, cleaner, "
-                summary2="and cared for – that’s Daily Clean Team for you"
-                font="fs-3"
-                fontP="fs-5"
-                // summary3="the errands"
-                p="We're more than a business; we're a family that cares for our employees, ensuring they care for your home with equal dedication."
-                // p2="smile"
-                // p3=", and"
-                // p4="relax."
-              />
-              <div className="justify-content-center">
-                <button className="footerButton mt-2">Get a Price</button>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <img
-                className="pb-4"
-                src={cleanTeam}
-                alt="home icon"
-                style={{ width: "100%", borderRadius: "4rem" }}
-              />
-            </div>
-          </div>
-        </div>
-      </div> */}
       <Footer />
       {/* <Lottie
         options={{
