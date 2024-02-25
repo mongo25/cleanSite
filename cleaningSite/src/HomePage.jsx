@@ -20,6 +20,7 @@ import {
   mobileApp,
   boa2019,
   boa2021,
+  commitedImage,
 } from "./assets";
 import carBackground from "./assets/carBackground.png";
 import { Link, useNavigate } from "react-router-dom";
@@ -286,7 +287,73 @@ function HomePage() {
           </div>
         </div>
       </section>
-      <div className="bannerMain spaceBetween">
+      <section class="commit-area">
+        <div class="container">
+          <div class="row custom-gutter">
+            <div class="col-md-10 m-auto">
+              <div class="row custom-gutter">
+                <div class="col-lg-5 col-md-6">
+                  <div class="commit-text text-start  py-5">
+                    <h2 className="fw-bold fs-2">
+                      At MoreHands, we're
+                      <br /> committed to caring.
+                    </h2>
+                    <div class="commit-img mob-visible">
+                      <img src={commitedImage} alt="commitedImage" />
+                    </div>
+                    <p className=" fw-semibold">
+                      We're a family business that takes good care of our
+                      employees, so they can take good care of your home.
+                    </p>
+                    <button className="btn-custom-3 py-4" href="/about.html">
+                      Read our Story
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-6 ml-auto mob-hidden">
+                  <div class="commit-img">
+                    <img src={commitedImage} alt="commited" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="care-area">
+        <div class="container container-max">
+          <div class="row custom-gutter">
+            <div class="col-md-12">
+              <div class="care-bg-area">
+                <div class="row custom-gutter">
+                  <div class="col-md-10 m-auto">
+                    <div class="care-bg">
+                      <div class="text-start">
+                        <h4 className="fw-bold mb-0 fs-4">
+                          How can we take care of you?
+                        </h4>
+                        <p className="fw-normal m-0 fs-custom">
+                          Tell us about your home, and get a price with no
+                          on-site consultation. <strong>Right now.</strong>{" "}
+                        </p>
+                      </div>
+                      <div class="care-right">
+                        <button
+                          className="btn-custom-1 py-3 fw-bold px-4"
+                          href="#"
+                        >
+                          Get a price
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <div className="bannerMain spaceBetween">
         <div className="container">
           <div className="row">
             <div className="col-md-6 d-flex flex-column justify-content-center">
@@ -315,7 +382,7 @@ function HomePage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <Footer />
       {/* <Lottie
         options={{

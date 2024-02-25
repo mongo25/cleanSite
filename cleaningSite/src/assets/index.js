@@ -15,5 +15,6 @@ export { default as reviewFour } from "./reviewFour.png";
 export { default as reviewFive } from "./reviewFive.png";
 export { default as boa2021 } from "./BOA2021_winner_white.png";
 export { default as boa2019 } from "./BOA2019_winner_white.png";
+export { default as commitedImage } from "./commited-image.jpg";
 
 export { default as cleanTeam } from "./cleaningTeam.png";

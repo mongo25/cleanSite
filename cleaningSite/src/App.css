@@ -450,3 +450,35 @@ li {
   margin: 0 auto;
   margin-top: -95px;
 }
+
+.commit-area {
+  padding-top: 80px;
+  position: relative;
+  z-index: 1;
+}
+.commit-text {
+  font-size: 1.1rem;
+}
+.mob-visible {
+  display: none;
+}
+.care-area {
+  margin-bottom: 90px;
+}
+.care-bg-area {
+  background: #ddf9ff;
+  border-radius: 16px;
+  padding: 150px 0 104px 0;
+  margin-top: -75px;
+}
+.care-bg {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fs-custom {
+  font-size: 1.1rem;
+}
