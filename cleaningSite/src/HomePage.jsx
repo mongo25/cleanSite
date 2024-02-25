@@ -5,6 +5,7 @@ import MyAnimation from "./myAnimation";
 import Slogan from "./Slogan";
 import StepsCard from "./StepsCard";
 import Footer from "./Footer";
+import { FaRegThumbsUp } from "react-icons/fa6";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   homeIcon,
@@ -17,6 +18,8 @@ import {
   ecoIcon,
   cleanTeam,
   mobileApp,
+  boa2019,
+  boa2021,
 } from "./assets";
 import carBackground from "./assets/carBackground.png";
 import { Link, useNavigate } from "react-router-dom";
@@ -94,8 +97,8 @@ function HomePage() {
       <section className="work-steps">
         <div className="container container-max">
           <div className="row">
-            <div class="col-md-12">
-              <div class="section-title">
+            <div className="col-md-12">
+              <div className="section-title">
                 <h2 className="fw-bold">How it works</h2>
                 <p>
                   We'll clean your home weekly, every two weeks, or every three
@@ -199,41 +202,44 @@ function HomePage() {
             </div>
             <div className="col-md-12">
               <div className="why-bottom-area">
-                <div class="">
-                  <div class="why-bottom-head">
+                <div className="">
+                  <div className="why-bottom-head">
                     <img src={mobileIcon} alt="mobile-icon" />
-                    <h5 class="text-white mb-4 mt-3 fw-bold fs-4 ">
+                    <h5 className="text-white mb-4 mt-3 fw-bold fs-4 ">
                       Take care of your household schedule on your phone
                     </h5>
                   </div>
-                  <div class="why-bottom-text text-white fw-semibold fs-5">
+                  <div className="why-bottom-text text-white fw-semibold fs-5">
                     <p>
                       Manage your cleaning services and schedule
                       <br /> in the MoreHands app
                     </p>
                   </div>
-                  <div class="why-bottom-btns pt-5 text-center">
+                  <div className="why-bottom-btns pt-5 text-center">
                     <a
                       href="https://apps.apple.com/us/app/morehands/id1513648303"
-                      class="btn btn-outline-white"
+                      className="btn btn-outline-white"
                       target="_blank"
                     >
-                      <i class="fab fa-apple fa-lg me-2" aria-hidden="true"></i>{" "}
+                      <i
+                        className="fab fa-apple fa-lg me-2"
+                        aria-hidden="true"
+                      ></i>{" "}
                       Download for iOS
                     </a>
                     <a
                       href="https://play.google.com/store/apps/details?id=com.morehands.customerApp&amp;hl=en_US&amp;gl=US"
-                      class="btn btn-outline-white ml-3"
+                      className="btn btn-outline-white ml-3"
                       target="_blank"
                     >
                       <i
-                        class="fab fa-google-play fa-lg me-2"
+                        className="fab fa-google-play fa-lg me-2"
                         aria-hidden="true"
                       ></i>{" "}
                       Download for Android
                     </a>
                   </div>
-                  <div class="mobile-shot-area">
+                  <div className="mobile-shot-area">
                     <img src={mobileApp} alt="mobile-app" />
                   </div>
                 </div>
@@ -257,6 +263,26 @@ function HomePage() {
                 <MyCarousel />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="container bg-custom container-max text-white mt-5 mb-8 py-4 rounded-4">
+        <div className="row justify-content-md-center align-items-center">
+          <div className="col-md col-md-auto text-center fs-6 fw-semibold">
+            <img width="112" height="140" alt="2019" src={boa2019} />
+            <br />
+            Winner 2019
+          </div>
+          <div className="col-md col-md-auto text-center fs-6 fw-semibold">
+            <img src={boa2021} width="112" height="140" alt="2021" />
+            <br />
+            Winner 2021
+          </div>
+          <div className="col-md-5 fs-4 fw-semibold h-100 text-center text-md-left mt-4 mt-md-0  ">
+            <h4 className="fs-3 fw-bold">Voted Best Maid Service</h4>
+            MoreHands was voted Best Maid Service in the Austin Chronicle (again{" "}
+            <FaRegThumbsUp />
+            ).
           </div>
         </div>
       </section>

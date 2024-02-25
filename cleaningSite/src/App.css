@@ -5,7 +5,10 @@
   text-align: center;
   color: #124e78;
 }
-
+.bg-custom {
+  background-color: #00afd0 !important;
+  color: #fff !important;
+}
 .btn-custom-1 {
   background-color: #00afd0 !important;
   color: #fff !important;

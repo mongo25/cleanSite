@@ -1,8 +1,8 @@
-@import '@fontsource/montserrat/index.css';
-@import '@fontsource/montserrat/500.css';
-@import '@fontsource/montserrat/600.css';
-@import '@fontsource/montserrat/700.css';
-@import '@fontsource/montserrat/800.css';
+@import "@fontsource/montserrat/index.css";
+@import "@fontsource/montserrat/500.css";
+@import "@fontsource/montserrat/600.css";
+@import "@fontsource/montserrat/700.css";
+@import "@fontsource/montserrat/800.css";
 :root {
   line-height: 1.5;
   font-weight: 400;
@@ -17,18 +17,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container-max{
+.container-max {
   max-width: 1312px;
-  }
-  
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
 }
 
 body {
@@ -36,9 +26,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 
 button {
   border-radius: 8px;
@@ -58,12 +47,12 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-.pt-custom-1{
+.pt-custom-1 {
   padding-top: 400px !important;
-  }
-.mt-custom-80{
-margin-top: 80px;
-}  
+}
+.mt-custom-80 {
+  margin-top: 80px;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -76,4 +65,3 @@ margin-top: 80px;
     background-color: #f9f9f9;
   }
 }
-
