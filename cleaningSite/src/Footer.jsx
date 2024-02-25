@@ -57,14 +57,14 @@ const Footer = () => {
                   COVID-19
                 </a>
               </h4>
-              <ul className="mb-0 ps-0 d-flex flex-column">
-                <li>
+              <ul className="mb-0 ps-0 d-flex t flex-column">
+                <li className="px-0">
                   <a href="/covid.html#your-home">Your Home</a>
                 </li>
-                <li>
+                <li className="px-0">
                   <a href="/covid.html#our-staff">Our Staff</a>
                 </li>
-                <li>
+                <li className="px-0">
                   <a href="/covid.html#our-office">Our Office</a>
                 </li>
               </ul>
@@ -78,16 +78,16 @@ const Footer = () => {
                 </a>
               </h4>
               <ul className="mb-0 ps-0 d-flex flex-column">
-                <li>
+                <li className="px-0">
                   <a href="/faq.html#our-maid-service">Our Maid Service</a>
                 </li>
-                <li>
+                <li className="px-0">
                   <a href="/faq.html#our-errand-service">Our Errand Service</a>
                 </li>
-                <li>
+                <li className="px-0">
                   <a href="/faq.html#billing-pricing">Billing and pricing</a>
                 </li>
-                <li>
+                <li className="px-0">
                   <a href="/faq.html#appointments-scheduling">
                     Appointments and scheduling
                   </a>
@@ -103,13 +103,13 @@ const Footer = () => {
                 </a>
               </h4>
               <ul className="mb-0 ps-0 d-flex flex-column">
-                <li>
+                <li className="px-0">
                   <a href="/contact.html">Contact us</a>
                 </li>
-                <li>
+                <li className="px-0">
                   <a href="/contact.html#locations">Branch information</a>
                 </li>
-                <li>
+                <li className="px-0">
                   <a href="/careers.html">Careers</a>
                 </li>
               </ul>
@@ -118,8 +118,8 @@ const Footer = () => {
           <div class="col-md-12">
             <div class="footer-1 copyright">
               <ul className="mb-0 ps-0 d-flex flex-column">
-                <li>© 2000</li>
-                <li>
+                <li className="px-0">© 2000</li>
+                <li className="px-0">
                   <a href="/privacy-security.html">Privacy - Terms</a>
                 </li>
               </ul>
