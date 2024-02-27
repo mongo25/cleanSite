@@ -1,4 +1,5 @@
 import morehandLogo from "./assets/morehands-logo.png";
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="container container-max ">
@@ -6,9 +7,9 @@ function Header() {
         <div className="col-auto">
           <div className="main-logo">
             <h1>
-              <a href="#">
+              <Link to="/">
                 <img src={morehandLogo} alt="morehand-logo" />
-              </a>
+              </Link>
             </h1>
           </div>
         </div>
@@ -21,7 +22,7 @@ function Header() {
               <a href="#">About</a>
             </li>
             <li>
-              <a href="#">FAQ</a>
+              <Link to="/faq">FAQ</Link>
             </li>
             <li>
               <a href="#">Contact</a>
