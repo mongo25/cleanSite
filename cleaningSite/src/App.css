@@ -19,6 +19,7 @@
 .text-custom-color {
   color: #00afd0 !important;
 }
+
 .btn-custom-1:hover {
   background-color: #008faa !important;
   border-color: #00849d !important;
@@ -436,7 +437,7 @@ li {
   font-weight: 400;
   color: #124e78;
 }
-.text-custom-color {
+.text-custom-color-4 {
   color: #124e78 !important;
 }
 .carousel-indicators {
@@ -569,4 +570,8 @@ a.numberVal-tel {
 }
 .accordion-button:focus {
   box-shadow: none !important;
+}
+
+.subpage-banner {
+  padding: 45px 0;
 }

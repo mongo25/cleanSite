@@ -16,7 +16,7 @@ function Header() {
         <div className="col-auto main-menu">
           <ul className="list-unstyled d-flex m-0">
             <li>
-              <a href="#">Our Service</a>
+              <Link to="/service">Our Service</Link>
             </li>
             <li>
               <a href="#">About</a>
