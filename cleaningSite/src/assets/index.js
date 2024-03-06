@@ -18,3 +18,4 @@ export { default as boa2019 } from "./BOA2019_winner_white.png";
 export { default as commitedImage } from "./commited-image.jpg";
 
 export { default as cleanTeam } from "./cleaningTeam.png";
+export { default as maidService } from "./maid-service.jpg";
