@@ -4,6 +4,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import { maidService } from "./assets";
+import { serviceFaqLists } from "./data";
+import FaqList2 from "./FaqList2";
 
 const ServicePage = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -72,6 +74,15 @@ const ServicePage = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="service-faq">
+        <div className="container container-max">
+          <div className="row">
+            <div className="col-md-11 mx-auto">
+              <FaqList2 faqList={serviceFaqLists} />
             </div>
           </div>
         </div>

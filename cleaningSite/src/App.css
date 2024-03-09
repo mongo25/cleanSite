@@ -440,6 +440,10 @@ li {
 .text-custom-color-4 {
   color: #124e78 !important;
 }
+.fs-custom-small {
+  line-height: 21px;
+  font-size: 14px;
+}
 .carousel-indicators {
   display: none !important;
 }

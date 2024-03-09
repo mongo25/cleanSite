@@ -383,3 +383,66 @@ export const faqLists = [
     ],
   },
 ];
+
+export const serviceFaqLists = {
+  id: "service-1",
+  faqItems: [
+    {
+      title: "What's included in a basic cleaning?",
+      isList: true,
+      headingId: "head-s11",
+      collapseId: "collapse-s11",
+
+      lists: [
+        {
+          id: "s11",
+          col: 3,
+          title: "Everywhere",
+          list: [
+            "Vacuum carpets",
+            "Dust ceiling fans",
+            "Dust furniture",
+            "Dust window sills",
+            "Polish furniture",
+            "Take out trash",
+            "Sanitize light switches",
+            "Sweep and mop floors",
+          ],
+        },
+        {
+          id: "s12",
+          col: 3,
+          title: "Bathrooms",
+          list: [
+            "Scrub and disinfect toilets",
+            "Scrub and disinfect tubs",
+            "Scrub and disinfect showers",
+            "Scrub and disinfect sinks",
+            "Scrub and disinfect counters",
+            "Clean mianirrors",
+            "Polish chrome",
+          ],
+        },
+        {
+          id: "s13",
+          col: 3,
+          title: "Kitchen",
+          list: [
+            "Scrub and sanitize sinks",
+            "Scrub and sanitize counters",
+            "Clean other surfaces",
+            "Clean outside appliances",
+            "Clean inside microwave",
+            "Place dishes in dishwasher",
+          ],
+        },
+        {
+          id: "s14",
+          col: 3,
+          title: "Bedrooms",
+          list: ["Make beds", "Change linens"],
+        },
+      ],
+    },
+  ],
+};
