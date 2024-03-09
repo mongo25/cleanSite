@@ -444,5 +444,44 @@ export const serviceFaqLists = {
         },
       ],
     },
+    {
+      title: "How do pricing and scheduling work?",
+      isList: false,
+      headingId: "head-s21",
+      collapseId: "collapse-s21",
+
+      lists: [
+        {
+          id: "s21",
+          colorText: "Your recurring price depends on the size of your home.",
+          text: "You can decide which add-ons to include on a visit by visit basis, and your price changes accordingly.",
+        },
+        {
+          id: "s22",
+          colorText:
+            "You can schedule your recurring cleanings as weekly, every two weeks, or every three weeks.",
+          text: "You can select a window of time when the housekeepers can arrive (because we clean many houses a day, we cannot set specific appointment times).",
+        },
+        {
+          id: "s23",
+          colorText: "If you need to reschedule, that's no problem!",
+          text: "Reschedule for free before 3:00 PM the day before your cleaning. After that point, there is a last-minute change fee, because it's difficult for us to re-balance cleaning schedules.",
+        },
+      ],
+    },
+    {
+      title: "What if I'm not happy with my service?",
+      isList: false,
+      headingId: "head-s31",
+      collapseId: "collapse-s31",
+
+      lists: [
+        {
+          id: "s31",
+          colorText: "At MoreHands, we guarantee your happiness.",
+          text: "We ask for your feedback after every single visit, via email or in our app. If you're not 100% satisfied with our services, we'll reach out to you, and find the way to make it right.",
+        },
+      ],
+    },
   ],
 };

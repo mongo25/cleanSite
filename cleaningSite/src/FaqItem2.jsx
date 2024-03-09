@@ -44,9 +44,18 @@ const FaqItem = ({ faqListId, faqItem }) => {
               ))}
             </div>
           )}
-          <p className="ps-2 text-custom-color-2 fw-normal">
-            {faqItem.description}
-          </p>
+
+          {!faqItem.isList &&
+            faqItem.lists.map((item) => (
+              <p key={item.id} className="ps-2 ">
+                <span className="fw-bold fs-6 text-custom-color-3">
+                  {item.colorText}
+                </span>
+                <span className="text-custom-color-2 fw-normal">
+                  {item.text}
+                </span>
+              </p>
+            ))}
         </div>
       </div>
     </div>
