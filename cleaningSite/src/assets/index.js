@@ -19,3 +19,4 @@ export { default as commitedImage } from "./commited-image.jpg";
 
 export { default as cleanTeam } from "./cleaningTeam.png";
 export { default as maidService } from "./maid-service.jpg";
+export { default as deeperClean } from "./deeper-clean.jpg";

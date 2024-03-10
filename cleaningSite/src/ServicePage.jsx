@@ -3,9 +3,10 @@ import SubpageBanner from "./components/SubpageBanner";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
-import { maidService } from "./assets";
+import { maidService, deeperClean } from "./assets";
 import { serviceFaqLists } from "./data";
 import FaqList2 from "./FaqList2";
+import { PiWarningCircleLight } from "react-icons/pi";
 
 const ServicePage = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -83,6 +84,54 @@ const ServicePage = () => {
           <div className="row">
             <div className="col-md-11 mx-auto">
               <FaqList2 faqList={serviceFaqLists} />
+              <div className="faq-warning mb-5">
+                <p className="fs-custom-small text-custom-color-3 m-0">
+                  <PiWarningCircleLight size={28} className="me-2" />
+                  <b>
+                    Only interested in a one-time, move-out, or move-in
+                    cleaning?
+                  </b>
+                  We can take care of that, too.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="maid-cleaner-area">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-11 m-auto">
+              <div className="maid-service1 maid-service-clean">
+                <div className="row ">
+                  <div className="col-md-6 ">
+                    <div className="maid-service-right">
+                      <img src={deeperClean} alt="deeper-clean" />
+                    </div>
+                  </div>
+                  <div className="col-md-6 order-md-2 d-flex flex-column align-items-center justify-content-center order-1">
+                    <div className="text-start d-flex flex-column py-6 px-3">
+                      <h2 className="fs-3 fw-bold ">
+                        Add-on services for a deeper clean
+                      </h2>
+                      <p className="fs-custom-18">
+                        Our services go beyond a basic cleaning. Before each
+                        visit, you can choose the add-ons that will make your
+                        life simpler.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-12">
+              <div className="deep-cleaner-block bg-custom-2">
+                <div className="row">
+                  <div className="col-md-11 m-auto">
+                    <div className="cleaner-block-list"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

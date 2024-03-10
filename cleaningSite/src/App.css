@@ -72,6 +72,9 @@
 .text-custom-color-3 {
   color: #00afd0 !important;
 }
+.fs-custom-18 {
+  font-size: 18px;
+}
 /* header code starts  */
 .main-menu-area {
   height: 108px;
@@ -582,4 +585,27 @@ a.numberVal-tel {
 
 .maid-service-area {
   padding: 70px 0 50px 0;
+}
+
+.faq-warning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddf9ff;
+  border-radius: 8px;
+  padding: 17px 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+.deep-cleaner-block {
+  margin-top: -50px;
+  z-index: -99 !important;
+}
+.cleaner-block-list {
+  padding: 85px 0;
+}
+.maid-service-right {
+  z-index: 999 !important;
+  display: block;
+  position: relative;
 }
