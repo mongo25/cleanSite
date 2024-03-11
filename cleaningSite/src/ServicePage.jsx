@@ -4,9 +4,10 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import { maidService, deeperClean } from "./assets";
-import { serviceFaqLists } from "./data";
+import { cleanBlockLists, serviceFaqLists } from "./data";
 import FaqList2 from "./FaqList2";
 import { PiWarningCircleLight } from "react-icons/pi";
+import CleanBlockCard from "./components/CleanBlockCard";
 
 const ServicePage = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -125,10 +126,21 @@ const ServicePage = () => {
               </div>
             </div>
             <div className="col-md-12">
-              <div className="deep-cleaner-block bg-custom-2">
+              <div className="deep-cleaner-block bg-custom-2 rounded-4">
                 <div className="row">
                   <div className="col-md-11 m-auto">
-                    <div className="cleaner-block-list"></div>
+                    <div className="cleaner-block-list d-flex justify-content-between flex-wrap">
+                      {cleanBlockLists.map((item) => (
+                        <CleanBlockCard
+                          key={item.id}
+                          img={item.img}
+                          alt={item.id}
+                          price={item.price}
+                          text={item.text}
+                          isUnderline={item.isUnderline}
+                        />
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>

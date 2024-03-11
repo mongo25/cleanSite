@@ -20,3 +20,14 @@ export { default as commitedImage } from "./commited-image.jpg";
 export { default as cleanTeam } from "./cleaningTeam.png";
 export { default as maidService } from "./maid-service.jpg";
 export { default as deeperClean } from "./deeper-clean.jpg";
+
+export { default as baseBoards } from "./svg/baseboards.svg";
+export { default as blinds } from "./svg/blinds.svg";
+export { default as cabinets } from "./svg/cabinets.svg";
+export { default as fridge } from "./svg/fridge.svg";
+export { default as laundry } from "./svg/laundry.svg";
+export { default as oven } from "./svg/oven.svg";
+export { default as spray } from "./svg/spray.svg";
+export { default as sweep } from "./svg/sweep.svg";
+export { default as tree } from "./svg/tree.svg";
+export { default as window } from "./svg/window.svg";

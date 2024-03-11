@@ -4,6 +4,16 @@ import {
   reviewThree,
   reviewFour,
   reviewFive,
+  laundry,
+  baseBoards,
+  blinds,
+  cabinets,
+  fridge,
+  oven,
+  spray,
+  sweep,
+  tree,
+  window,
 } from "./assets";
 
 export const reviewItems = [
@@ -485,3 +495,76 @@ export const serviceFaqLists = {
     },
   ],
 };
+
+export const cleanBlockLists = [
+  {
+    id: 11,
+    img: laundry,
+    price: "$5 / load",
+    text: "Fold clothes",
+    isUnderline: true,
+  },
+  {
+    id: 12,
+    img: sweep,
+    price: "$7 ",
+    text: "Sweep porches",
+    isUnderline: false,
+  },
+  {
+    id: 13,
+    img: tree,
+    price: "$20 ",
+    text: "Green cleaning solutions",
+    isUnderline: false,
+  },
+  {
+    id: 14,
+    img: cabinets,
+    price: "$19 ",
+    text: "Clean exterior of kitchen cabinets",
+    isUnderline: false,
+  },
+  {
+    id: 15,
+    img: oven,
+    price: "$44 ",
+    text: "Deep clean oven",
+    isUnderline: false,
+  },
+  {
+    id: 16,
+    img: fridge,
+    price: "$44 ",
+    text: "Clean out fridge/ freezer",
+    isUnderline: false,
+  },
+  {
+    id: 17,
+    img: baseBoards,
+    price: "$29 ",
+    text: "Clean baseboards",
+    isUnderline: false,
+  },
+  {
+    id: 18,
+    img: blinds,
+    price: "$44 + ",
+    text: "Clean blinds",
+    isUnderline: false,
+  },
+  {
+    id: 19,
+    img: window,
+    price: "$44 + ",
+    text: "Clean interior windows",
+    isUnderline: false,
+  },
+  {
+    id: 20,
+    img: spray,
+    price: "$59 + ",
+    text: "Disinfecting spray service",
+    isUnderline: false,
+  },
+];

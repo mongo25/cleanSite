@@ -609,3 +609,13 @@ a.numberVal-tel {
   display: block;
   position: relative;
 }
+
+.cleaner-block {
+  width: 17%;
+  margin: 12px 15px;
+}
+
+.border-custom-bottom {
+  border-bottom: #00afd0 solid 2px;
+  width: fit-content;
+}
