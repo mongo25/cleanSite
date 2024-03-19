@@ -1,23 +1,37 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./HomePage";
-import OurPricePage from "./OurPricePage";
-import FaqPage from "./FaqPage";
-import ServicePage from "./ServicePage";
-// import AboutPage from './AboutPage';
+import { BrowserRouter as Router } from "react-router-dom";
+import Header from "./Header";
+import Footer from "./Footer";
+import MainRoutes from "./MainRoutes";
+import { useEffect, useState } from "react";
 // import NotFoundPage from './NotFoundPage';
 
 function App() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    // Add the event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/faq" element={<FaqPage />} />
-        <Route path="/service" element={<ServicePage />} />
-        <Route path="/OurPrice" element={<OurPricePage />} />
-
-        {/* <Route path="/about" element={<AboutPage />} />
-        <Route path="*" element={<NotFoundPage />} /> */}
-      </Routes>
+      <header
+        className={`sticky-top main-menu-area ${scrolled ? "headerShadow" : ""
+          }`}
+      >
+        <Header />
+      </header>
+      <MainRoutes />
+      <Footer />
     </Router>
   );
 }

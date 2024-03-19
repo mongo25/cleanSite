@@ -1,36 +1,9 @@
 import FaqList from "./FaqList";
-import Footer from "./Footer";
-import Header from "./Header";
 import { faqLists } from "./data";
-import { useState, useEffect } from "react";
 
 const FaqPage = () => {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
-      setScrolled(isScrolled);
-      console.log("scrollllleddd");
-    };
-
-    // Add the event listener
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <>
-      <header
-        className={`sticky-top main-menu-area ${
-          scrolled ? "headerShadow" : ""
-        }`}
-      >
-        <Header />
-      </header>
       <section className="no-hero-holder">
         <div className="container">
           <div className="row custom-gutter">
@@ -53,7 +26,6 @@ const FaqPage = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

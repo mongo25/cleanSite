@@ -31,3 +31,8 @@ export { default as spray } from "./svg/spray.svg";
 export { default as sweep } from "./svg/sweep.svg";
 export { default as tree } from "./svg/tree.svg";
 export { default as window } from "./svg/window.svg";
+
+export { default as call } from "./svg/call.svg";
+export { default as success } from "./svg/success.svg";
+export { default as address } from "./svg/address.svg";
+// export { default as warning } from "./svg/warning.svg";

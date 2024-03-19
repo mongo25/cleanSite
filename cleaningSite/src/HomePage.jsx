@@ -1,10 +1,7 @@
-import { useState, useEffect } from "react";
 import "./App.css";
-import Header from "./Header";
 import MyAnimation from "./myAnimation";
 import Slogan from "./Slogan";
 import StepsCard from "./StepsCard";
-import Footer from "./Footer";
 import { FaRegThumbsUp } from "react-icons/fa6";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
@@ -30,36 +27,13 @@ import WhyCards from "./WhyCards";
 import MyCarousel from "./MyCarousel";
 
 function HomePage() {
-  const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
   const handleButtonClick = () => {
-    navigate("/OurPrice"); // Replace '/your-path' with your desired route
+    navigate("/ourPrice"); // Replace '/your-path' with your desired route
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
-      setScrolled(isScrolled);
-      console.log("scrollllleddd");
-    };
-
-    // Add the event listener
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <>
-      <header
-        className={`sticky-top main-menu-area ${
-          scrolled ? "headerShadow" : ""
-        }`}
-      >
-        <Header />
-      </header>
       <div className="bannerMain spaceBetween">
         <div className="container container-max">
           <div className="row">
@@ -75,12 +49,12 @@ function HomePage() {
               />
               {/* <Link to="/"> */}
               <div className="d-flex justify-content-left mt-4">
-                <a
+                <button
                   onClick={handleButtonClick}
                   className="btn btn-custom-2 px-4 py-3 fs-5 fw-bold"
                 >
                   See how it works
-                </a>
+                </button>
               </div>
               {/* </Link> */}
             </div>
@@ -287,18 +261,18 @@ function HomePage() {
           </div>
         </div>
       </section>
-      <section class="commit-area">
-        <div class="container">
-          <div class="row custom-gutter">
-            <div class="col-md-10 m-auto">
-              <div class="row custom-gutter">
-                <div class="col-lg-5 col-md-6">
-                  <div class="commit-text text-start  py-5">
+      <section className="commit-area">
+        <div className="container">
+          <div className="row custom-gutter">
+            <div className="col-md-10 m-auto">
+              <div className="row custom-gutter">
+                <div className="col-lg-5 col-md-6">
+                  <div className="commit-text text-start  py-5">
                     <h2 className="fw-bold fs-2">
                       At MoreHands, we're
                       <br /> committed to caring.
                     </h2>
-                    <div class="commit-img mob-visible">
+                    <div className="commit-img mob-visible">
                       <img src={commitedImage} alt="commitedImage" />
                     </div>
                     <p className=" fw-semibold">
@@ -310,8 +284,8 @@ function HomePage() {
                     </button>
                   </div>
                 </div>
-                <div class="col-md-6 ml-auto mob-hidden">
-                  <div class="commit-img">
+                <div className="col-md-6 ml-auto mob-hidden">
+                  <div className="commit-img">
                     <img src={commitedImage} alt="commited" />
                   </div>
                 </div>
@@ -320,15 +294,15 @@ function HomePage() {
           </div>
         </div>
       </section>
-      <section class="care-area">
-        <div class="container container-max">
-          <div class="row custom-gutter">
-            <div class="col-md-12">
-              <div class="care-bg-area">
-                <div class="row custom-gutter">
-                  <div class="col-md-10 m-auto">
-                    <div class="care-bg">
-                      <div class="text-start">
+      <section className="care-area">
+        <div className="container container-max">
+          <div className="row custom-gutter">
+            <div className="col-md-12">
+              <div className="care-bg-area">
+                <div className="row custom-gutter">
+                  <div className="col-md-10 m-auto">
+                    <div className="care-bg">
+                      <div className="text-start">
                         <h4 className="fw-bold mb-0 fs-4">
                           How can we take care of you?
                         </h4>
@@ -337,7 +311,7 @@ function HomePage() {
                           on-site consultation. <strong>Right now.</strong>{" "}
                         </p>
                       </div>
-                      <div class="care-right">
+                      <div className="care-right">
                         <button
                           className="btn-custom-1 py-3 fw-bold px-4"
                           href="#"
@@ -353,7 +327,6 @@ function HomePage() {
           </div>
         </div>
       </section>
-      <Footer />
       {/* <Lottie
         options={{
           loop: true,

@@ -568,3 +568,242 @@ export const cleanBlockLists = [
     isUnderline: false,
   },
 ];
+
+export const contentLocations = [
+  {
+    "locationName": "Austin",
+    "branch": "austin",
+    "friendly": "austin",
+    "serving": [
+      {
+        "neighborhood": "Austin",
+        "cityPage": "https://morehands.com/cities/austin-tx-maid-service/"
+      },
+      {
+        "neighborhood": "Cedar Park",
+        "cityPage": "https://morehands.com/cities/cedar-park-tx-maid-service/"
+      },
+      {
+        "neighborhood": "Georgetown",
+        "cityPage": "https://morehands.com/cities/georgetown-tx-maid-service/"
+      },
+      {
+        "neighborhood": "Lakeway",
+        "cityPage": "https://morehands.com/cities/lakeway-tx-maid-service/"
+      },
+      {
+        "neighborhood": "Round Rock",
+        "cityPage": "https://morehands.com/cities/round-rock-tx-maid-service/"
+      }
+    ],
+    "phone": [
+      {
+        "cityName": "Austin",
+        "number": "512-479-7978"
+      }
+    ],
+    "address": "8000 Anderson Square Suite 107",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78757",
+    "latitude": "30.35221171",
+    "longitude": "-97.71596363",
+    "directions": "https://www.google.com/maps/dir/morehands+austin"
+  },
+  {
+    "locationName": "Dallas",
+    "branch": "dallas",
+    "friendly": "dallas",
+    "serving": [
+      {
+        "neighborhood": "Carrollton",
+        "cityPage": "https://morehands.com/cities/carrollton-tx-maid-service/"
+      },
+      {
+        "neighborhood": "Dallas",
+        "cityPage": "https://morehands.com/cities/dallas-tx-maid-service/"
+      },
+      {
+        "neighborhood": "Plano",
+        "cityPage": "https://morehands.com/cities/plano-tx-maid-service/"
+      },
+      {
+        "neighborhood": "Richardson",
+        "cityPage": "https://morehands.com/cities/richardson-tx-maid-service/"
+      }
+    ],
+    "phone": [
+      {
+        "cityName": "",
+        "number": "469-713-1207"
+      }
+    ],
+    "address": "11411 N Central Expy, Ste. D",
+    "city": "Dallas",
+    "state": "TX",
+    "zip": "75243",
+    "latitude": "32.90384908",
+    "longitude": "-96.77027938",
+    "directions": "https://www.google.com/maps/dir//morehands+dallas"
+  },
+  {
+    "locationName": "Katy",
+    "branch": "katy",
+    "friendly": "katy",
+    "serving": [
+      {
+        "neighborhood": "Katy",
+        "cityPage": "https://morehands.com/cities/katy-tx-maid-service/"
+      },
+      {
+        "neighborhood": "Richmond",
+        "cityPage": "https://morehands.com/cities/richmond-tx-maid-service/"
+      },
+      {
+        "neighborhood": "Sugar Land",
+        "cityPage": ""
+      }
+    ],
+    "phone": [
+      {
+        "cityName": "",
+        "number": "832-437-0343"
+      }
+    ],
+    "address": "1315 West Grand Pkwy S. Ste. 111",
+    "city": "Katy",
+    "state": "TX",
+    "zip": "77494",
+    "latitude": "29.7609341",
+    "longitude": "-95.77469416",
+    "directions": "https://www.google.com/maps/dir//morehands+katy"
+  },
+  {
+    "locationName": "Cypress-Fairbanks",
+    "branch": "cypress-fairbanks",
+    "friendly": "cypress-fairbanks",
+    "serving": [
+      {
+        "neighborhood": "Cypress-Fairbanks",
+        "cityPage": "https://morehands.com/cities/cypress-tx-maid-service/"
+      },
+      {
+        "neighborhood": "Hockly/Waller",
+        "cityPage": "https://morehands.com/cities/hockley-waller-tx-maid-service/"
+      },
+      {
+        "neighborhood": "West Houston",
+        "cityPage": "https://morehands.com/cities/west-houston-tx-maid-service/"
+      }
+    ],
+    "phone": [
+      {
+        "cityName": "",
+        "number": "713-439-1111"
+      }
+    ],
+    "address": "21514 Northwest Freeway",
+    "city": "Cypress",
+    "state": "TX",
+    "zip": "77429",
+    "latitude": "29.92920662",
+    "longitude": "-95.6380524",
+    "directions": "https://www.google.com/maps/dir//morehands+cypress"
+  },
+  {
+    "locationName": "Houston",
+    "branch": "houston",
+    "friendly": "houston",
+    "serving": [
+      {
+        "neighborhood": "Central Houston",
+        "cityPage": "https://morehands.com/cities/houston-tx-maid-service/"
+      }
+    ],
+    "phone": [
+      {
+        "cityName": "",
+        "number": "713-439-1111"
+      }
+    ],
+    "address": "1737 West Alabama",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77098",
+    "latitude": "29.73859876",
+    "longitude": "-95.40357939",
+    "directions": "https://www.google.com/maps/dir//morehands+houston"
+  },
+  {
+    "locationName": "Spring",
+    "branch": "north-houston",
+    "friendly": "spring",
+    "serving": [
+      {
+        "neighborhood": "North Houston",
+        "cityPage": ""
+      },
+      {
+        "neighborhood": "Spring",
+        "cityPage": "https://morehands.com/cities/spring-tx-maid-service/"
+      },
+      {
+        "neighborhood": "Tomball",
+        "cityPage": "https://morehands.com/cities/tomball-tx-maid-service/"
+      },
+      {
+        "neighborhood": "The Woodlands",
+        "cityPage": "https://morehands.com/cities/the-woodlands-tx-maid-service/"
+      }
+    ],
+    "phone": [
+      {
+        "cityName": "",
+        "number": "281-350-9900"
+      }
+    ],
+    "address": "26011 North I-45",
+    "city": "Spring",
+    "state": "TX",
+    "zip": "77380",
+    "latitude": "30.14022199",
+    "longitude": "-95.44686543",
+    "directions": "https://www.google.com/maps/dir//morehands+woodlands"
+  },
+  {
+    "locationName": "Humble",
+    "branch": "north-houston",
+    "friendly": "humble",
+    "serving": [
+      {
+        "neighborhood": "Atascocita",
+        "cityPage": "https://morehands.com/cities/atascocita-tx-maid-service/"
+      },
+      {
+        "neighborhood": "Humble",
+        "cityPage": "https://morehands.com/cities/humble-tx-maid-service/"
+      },
+      {
+        "neighborhood": "Northeast Houston",
+        "cityPage": ""
+      },
+      {
+        "neighborhood": "Kingwood",
+        "cityPage": "https://morehands.com/cities/kingwood-tx-maid-service/"
+      }
+    ],
+    "phone": [
+      {
+        "cityName": "",
+        "number": "281-350-9900"
+      }
+    ],
+    "address": "4550 FM 1960, Suite K",
+    "city": "Humble",
+    "state": "TX",
+    "zip": "77346",
+    "latitude": "29.99912795",
+    "longitude": "-95.20511936",
+    "directions": "https://www.google.com/maps/dir//morehands+woodlands"
+  }
+]
