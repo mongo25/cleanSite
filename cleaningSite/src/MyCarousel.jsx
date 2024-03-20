@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Carousel } from "react-bootstrap";
-import "./App.css";
 import WhyCards from "./WhyCards";
 import {
   reviewOne,

@@ -1,5 +1,3 @@
-import "./App.css";
-
 function Slogan({ summary, summary2, summary3, p, p2, p3, p4, font, fontP }) {
   return (
     <div className="sloganText">

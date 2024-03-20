@@ -5,6 +5,7 @@ import FaqPage from "./FaqPage";
 import ServicePage from "./ServicePage";
 import AboutPage from './AboutPage';
 import ContactPage from "./ContactPage";
+import CheckoutPage from "./CheckoutPage";
 
 const MainRoutes = () => {
     return (
@@ -15,6 +16,7 @@ const MainRoutes = () => {
             <Route path="/ourPrice" element={<OurPricePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/checkout" element={<CheckoutPage />} />
             {/* <Route path="*" element={<NotFoundPage />} /> */}
         </Routes>
     )

@@ -1,4 +1,3 @@
-import "./App.css";
 import MyAnimation from "./myAnimation";
 import Slogan from "./Slogan";
 import StepsCard from "./StepsCard";
