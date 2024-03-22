@@ -1,12 +1,11 @@
 import React from "react";
 
-const FaqItem = ({ faqListId, faqItem }) => {
-  console.log({ faqItem });
+const FaqItem = ({ faqListId, faqItem, isCustom = false }) => {
   return (
-    <div className="accordion-item">
+    <div className={isCustom ? "faq" : "accordion-item"}>
       <h2 className="accordion-header " id={faqItem.headingId}>
         <button
-          className="accordion-button  collapsed ps-5"
+          className="accordion-button collapsed ps-5"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target={`#${faqItem.collapseId}`}
